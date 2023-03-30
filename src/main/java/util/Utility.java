@@ -28,4 +28,8 @@ public class Utility {
             vector.add( random(99));
         }
     }
+
+    public static int compare(Object a, Object b){
+
+    }
 }
