@@ -36,62 +36,29 @@ public class HelloController {
 
     @FXML
     void Home(ActionEvent event) {
-        this.txtMessage.setText("Laboratory No. 2");
+        this.txtMessage.setText("Laboratory No. 3");
         this.bp.setCenter(ap);
     }
 
     @FXML
-    void knapsackOnMousePressed(MouseEvent event) {
-        this.txtMessage.setText("Loading Knapsack Problem. Please wait!!!");
-        this.bp.setCenter(ap);
+    void divideAndConquerOnAction(ActionEvent event) {
+        loadPage("divideAndConquer.fxml");
     }
 
     @FXML
-    void knapsackProblem(ActionEvent event) {
-        loadPage("knapsack.fxml");
+    void dynamicOnAction(ActionEvent event) {
+        loadPage("dynamic.fxml");
     }
 
     @FXML
-    void knightTour(ActionEvent event) {
-
+    void probabilisticOnAction(ActionEvent event) {
+        loadPage("probabilistic.fxml");
     }
 
     @FXML
-    void knightTourOnMousePressed(MouseEvent event) {
-        this.txtMessage.setText("Loading The Knight Tour. Please wait!!!");
-        this.bp.setCenter(ap);
+    void vectorOnAction(ActionEvent event) {
+        loadPage("vector.fxml");
     }
 
-    @FXML
-    void nQueenOnMousePressed(MouseEvent event) {
-        this.txtMessage.setText("Loading N Queen Problem. Please wait!!!");
-        this.bp.setCenter(ap);
-    }
 
-    @FXML
-    void nQueenProblem(ActionEvent event) {
-        loadPage("nQueenProblem.fxml");
-    }
-
-    @FXML
-    void ratInMaze(ActionEvent event) {
-        loadPage("ratInMaze.fxml");
-    }
-
-    @FXML
-    void ratInMazeOnMousePressed(MouseEvent event) {
-        this.txtMessage.setText("Loading Rat in a Maze. Please wait!!!");
-        this.bp.setCenter(ap);
-    }
-
-    @FXML
-    void sudokuOnMousePressed(MouseEvent event) {
-        this.txtMessage.setText("Loading Sudoku Solver. Please wait!!!");
-        this.bp.setCenter(ap);
-    }
-
-    @FXML
-    void sudokuSolver(ActionEvent event) {
-        loadPage("sudokuSolver.fxml");
-    }
 }
